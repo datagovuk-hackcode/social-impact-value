@@ -1,3 +1,12 @@
+:javascript
+	$(function(){
+		$('.rate li').click(function(event){
+			var link = $(event.currentTarget);
+			link.parents('.rate').find('.active').removeClass('active');
+			link.addClass('active');
+		});
+	});
+
 #review-pages#review
 	%section.intro
 		.content
