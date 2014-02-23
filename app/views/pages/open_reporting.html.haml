@@ -1,0 +1,23 @@
+#review-pages#review
+	%section.intro
+		.content
+			%h1 I bought ExampleCo toothpaste
+			%h2 because it reports on it's environmental status
+
+
+	%section.content
+		%ul.rate
+			%li 1
+			%li 2
+			%li 3
+			%li 4
+			%li 5			
+		%form
+			%fieldset
+				%legend 
+				%textarea.large{:type => "text", :placeholder => "provide a summary of your source"}
+				.clear
+				%input{:type => "text", :placeholder => "provide a link to your source"}
+				.clear
+				.center
+					= link_to "submit your review", browse_path

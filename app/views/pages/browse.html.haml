@@ -1,0 +1,22 @@
+#browse-pages
+	%section.intro
+		.content
+			%h1 ExampleCo
+			%h1 toothpaste
+			%br
+			%h2 good but poor value
+			%br
+			= link_to "share", root_path
+
+	%section.content
+		.third
+			= link_to "social", social_path, :class => 'blue'
+			.three.blue-background
+		.third.dark
+			= link_to "environmental", environmental_path, :class => 'green'
+			.four.green-background
+		.third
+			= link_to "economical", economical_path, :class => 'yellow'
+			.one.yellow-background
+
+

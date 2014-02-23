@@ -1,0 +1,58 @@
+@import colours
+#review-pages#review
+	.intro .content
+		h1, h2
+			display: inline
+#review-pages
+
+	.first-links, .second-links
+		list-style: none
+		margin: 50px 0
+		width: 100%
+		padding: 0
+		ul
+
+		li
+			margin: 50px 0
+			font-size: 1.2em
+			text-align: center
+		a.white
+			color: $b05
+			z-index: 10
+			position: relative
+		a.blue
+			color: $blue
+		a.green
+			color: $green
+		a.yellow
+			color: $yellow
+
+#review
+	.center
+		text-align: center
+		margin: auto
+		margin-top: 15px
+		width: 300px
+		a
+			font-size: 1.2em
+			color: $blue
+	textarea.large
+		height: 100px
+	ul.rate
+		list-style: none
+		li
+			background: $b30
+			border: none
+			border-radius: 20px
+			height: 40px
+			width: 40px
+			line-height: 2em
+			text-align: center
+			float: left
+			margin: 25px 4%
+			&:hover
+				background: $w
+				cursor: pointer
+			a
+				&:active
+					background: $b10

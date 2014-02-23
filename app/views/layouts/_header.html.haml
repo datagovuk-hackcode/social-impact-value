@@ -1,0 +1,41 @@
+#header-partial
+	.content
+		- if current_page?(browse_path)
+			%a{:href => "../", :class => "back"}
+				= fa_icon "long-arrow-left"
+
+		- if current_page?(social_path)
+			%a{:href => "/browse", :class => "back"}
+				= fa_icon "long-arrow-left"
+		- if current_page?(environmental_path)
+			%a{:href => "/browse", :class => "back"}
+				= fa_icon "long-arrow-left"
+		- if current_page?(economical_path)
+			%a{:href => "/browse", :class => "back"}
+				= fa_icon "long-arrow-left"
+
+		- if current_page?(sources_path)
+			%a{:href => "/browse", :class => "back"}
+				= fa_icon "long-arrow-left"
+
+		- if current_page?(positive_review_path)
+			%a{:href => "/", :class => "back"}
+				= fa_icon "long-arrow-left"
+		- if current_page?(negative_review_path)
+			%a{:href => "/", :class => "back"}
+				= fa_icon "long-arrow-left"
+
+
+		- if current_page?(social_links_path)
+			%a{:href => "/positive_review", :class => "back"}
+				= fa_icon "long-arrow-left"
+		- if current_page?(environmental_links_path)
+			%a{:href => "/positive_review", :class => "back"}
+				= fa_icon "long-arrow-left"
+		- if current_page?(economical_links_path)
+			%a{:href => "/positive_review", :class => "back"}
+				= fa_icon "long-arrow-left"
+
+		- if current_page?(open_reporting_path)
+			%a{:href => "/environmental_links", :class => "back"}
+				= fa_icon "long-arrow-left"

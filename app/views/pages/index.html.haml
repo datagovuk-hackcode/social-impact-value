@@ -1,0 +1,17 @@
+%section.intro
+	.content
+		%h1 value
+		%br
+		%h2 informing consumer decisions, together 
+
+%section.content
+	%form
+		%fieldset
+			%legend 
+			%input{:type => "text", :placeholder => "product"}
+			.clear
+			%input{:type => "text", :placeholder => "company"}
+			.clear
+			= link_to "browse product reviews", browse_path, :class => 'third'
+			= link_to "I bought this product", positive_review_path, :class => 'third'
+			= link_to "I didn't buy this product", negative_review_path, :class => 'third'
