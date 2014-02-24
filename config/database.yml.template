@@ -1,6 +1,6 @@
 defaults: &defaults
   encoding: utf-8
-  username: laurenceberry
+  username: edavey
   password:
   pool: 5
   host: 127.0.0.1
